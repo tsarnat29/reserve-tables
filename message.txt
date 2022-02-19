@@ -1,0 +1,46 @@
+message: {
+    message_id: 72,
+    from: {
+      id: 5180288492,
+      is_bot: true,
+      first_name: 'Бронь столиков',
+      username: 'reserv_table_bot'
+    },
+    chat: {
+      id: 585241863,
+      first_name: 'Natalya',
+      last_name: 'Tsar...',
+      username: 'natfromd',
+      type: 'private'
+    },
+    date: 1644526828,
+    text: 'Обирай стіл за номером',
+    reply_markup: { inline_keyboard: [Array] }
+  },
+  chat_instance: '-6105014188886021389',
+  data: '2'
+}
+___________________________________
+
+callbackResponse =  { data: '2022.03.04',
+ id: '585241863' }
+chats= [ '{"data":"2022.03.04","id":"585241863"}' ]
+
+___________________________________
+
+добавляем git:
+$ git init .
+$ git status
+$ git add --all
+$ git status
+$ git commit -m "text"
+ Дальше создаем репозиторий в github:
+new repository...
+git remote add origin http...
+git push origin master
+Добавляем в проект файл .ignore
+Запишем там:
+./node_modules
+git add --all
+git commit -m "project:configure simple chat"
+git push origin master

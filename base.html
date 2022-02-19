@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		const chats = [{"data":"2022.03.08","id":"585241863"}, 7];
+		const chatId = "585241863";
+		updateDataBase(chatId, chats);
+		function updateDataBase(chatId, chats = null){
+      
+      let busy_table = {
+        '2022.02.16': [{client: '12345', table: [1,2]}, {client: '123', table: [3]}],
+        '2022.02.28': [{client: '12345', table: [1]}]
+      };
+    if (chats) {
+    	let date = chats[0].data;
+    	const client = chats[0].id;
+    	const numberTable = chats[1];
+    	console.log(date);
+    	// date = '2022.02.16';
+    	let table = Array(numberTable).fill(1);
+    	busy_table[date] = [...busy_table[date]||'', {client:client, table: table}];
+      console.log(busy_table[date]);
+  }
+  return busy_table;
+}
+	</script>
+</body>
+</html>
